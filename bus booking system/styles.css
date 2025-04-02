@@ -1,0 +1,289 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 90%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* SEAT LAYOUT */
+.bus-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.seat-row {
+    display: flex;
+    gap: 15px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.seat:hover {
+    background-color: #0056b3;
+}
+
+.seat.selected {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+}
+
+/* Creates space in the middle for the bus aisle */
+.aisle {
+    width: 30px;
+}
+
+/* PAYMENT FORM */
+#payment-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#payment-section input {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style for Select Seat Button */
+.select-seat-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.select-seat-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Adjust Confirm Seat button spacing */
+#seat-selection button {
+    margin-top: 40px; /* Adjusted to create more space below seat rows */
+}
+
+#payment-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* Style for Select Seat Button */
+.select-seat-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.select-seat-btn:hover {
+    background-color: #0056b3;
+}
+
+/* styling for route selection */
+#route-selection {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#route-selection h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#route-selection select {
+    font-size: 1.1rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#route-selection select:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* styling for Enter Your Details */
+#booking-form {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#booking-form h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#booking-form input {
+    font-size: 1.1rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+#booking-form input:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #eef6ff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for ticket price */
+#ticket-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #159b36;
+    margin-bottom: 20px;
+}
+body {
+    background-image: url('bus.jpg'); /* Replace with actual image file */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #007bff !important; /* Ensures header remains solid blue */
+}
+main {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Adds a blur effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Remove white background and shadows for inner banners ONLY on the first page */
+.home-page #route-selection,
+.home-page #booking-form {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border: none !important;
+    
+}
+#payment-section {
+    background: none; /* Remove any background color */
+    padding: 20px }/* Optional: Add padding for better spacing */
+    
+

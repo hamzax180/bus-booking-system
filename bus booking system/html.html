@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altinbas Bus Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="seat_script.js"></script>
+</head>
+<body class="home-page"> 
+
+    <header>
+        <h1>Altinbas Bus Ticket Booking</h1>
+    </header>
+    
+    <main>
+        <section id="route-selection">
+            <h2>Select Your Route</h2>
+            <select id="route" onchange="saveRoute()">
+                <option value="istanbul-ankara">Istanbul to Ankara</option>
+                <option value="izmir-antalya">Izmir to Antalya</option>
+                <option value="bursa-konya">Bursa to Konya</option>
+                <option value="riyadh-jeddah">Riyadh to Jeddah</option>
+            </select>
+        </section>
+
+        <section id="booking-form">
+            <h2>Enter Your Details</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="passport" id="passport" placeholder="Your ID or Passport Number">
+            <a href="html2.html" class="button select-seat-btn">Select Seat</a> <!-- Styled as a button -->
+        </section>
+ 
+        <script>
+            function saveRoute() {
+                const selectedRoute = document.getElementById("route").value;
+                localStorage.setItem("selectedRoute", selectedRoute);
+            }
+        </script>
+        
+    </main>
+</body>
+</html>

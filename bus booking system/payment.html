@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+    </header>
+    
+    <main>
+        <section id="payment-section">
+            <p id="ticket-price">Price: $50</p> <!-- Display price dynamically -->
+
+            <h2>Payment Details</h2>
+            <p>Route Selected: <span id="selected-route"></span></p> <!-- Display selected route -->
+            <p>Seat Selected: <span id="selected-seat"></span></p> <!-- Display selected seat -->
+            
+            <input type="text" id="card-name" placeholder="Cardholder Name">
+            <input type="text" id="card-number" placeholder="Card Number">
+            <input type="text" id="expiry" placeholder="MM/YY">
+            <input type="text" id="cvv" placeholder="CVV">
+            <button onclick="processPayment()">Pay Now</button>
+        </section>
+    </main>
+    
+    <script>
+        // Retrieve selected seat and route from localStorage
+        document.getElementById("selected-seat").textContent = localStorage.getItem("selectedSeat") || "Not selected";
+        document.getElementById("selected-route").textContent = localStorage.getItem("selectedRoute") || "Not selected";
+
+        function processPayment() {
+            alert("Payment Successful! Your ticket has been booked.");
+            localStorage.removeItem("selectedSeat"); // Clear seat selection after payment
+            localStorage.removeItem("selectedRoute"); // Clear route selection after payment
+            window.location.href = "html.html"; // Redirect back to homepage
+        }
+    </script>
+</body>
+</html>
